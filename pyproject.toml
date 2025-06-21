@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pass_tool"
+version = "1.0.0"
+authors = [
+    {name = "Sridhar S"},
+]
+description = "Password Strength Analyzer & Custom Wordlist Generator"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "zxcvbn>=4.4.28",
+    "nltk>=3.8.1",
+]
+
+[project.scripts]
+pass-tool = "pass_tool.gui:main"
+
+[tool.setuptools]
+packages = ["pass_tool"]

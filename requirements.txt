@@ -1,0 +1,9 @@
+# Password Strength Analyzer & Custom Wordlist Generator
+# Required packages for cross-platform GUI application
+
+zxcvbn>=4.4.28
+nltk>=3.8.1
+
+# Development and testing dependencies (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
